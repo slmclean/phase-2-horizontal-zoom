@@ -104,10 +104,7 @@ d3.json(STRUCTURES_URL, function(response) {
 
             //Hide the tooltip
             d3.select("#tooltip2").classed("hidden", true);
-            d3.select("#tooltip")
-            .select("#value")
-            .html("Hover over to display information.");
-
+      
             })
           .each(function (d) {
             if (d.children == null) {
@@ -121,12 +118,6 @@ d3.json(STRUCTURES_URL, function(response) {
           .on("click", clicked)
           .on("mouseover", function (d) {
             
-           d3.select("#tooltip")
-                .style("left", 200 + "px")
-                .style("top", 200 + "px")
-                .select("#value")
-                .text("Some sort of data.")
-            d3.select("#tooltip").classed("hidden", false);
             d3.select("#tooltip2").classed("hidden", false);
           
           console.log(d3.select('#' + d.path).attr("id"));
