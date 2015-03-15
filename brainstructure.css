@@ -1,0 +1,88 @@
+
+path {
+  stroke-width: 2;
+  stroke: black;
+}
+
+.hover {
+  stroke-width: 20;
+}
+
+#brain {
+  position: relative;
+  width: 500;
+  height: 500;
+  border: 2px solid #D5D5D5;
+}
+#icicle {
+  position: relative
+  border: 2px solid #D5D5D5;
+}
+
+.node {
+  fill: #ddd;
+  stroke: #fff;
+}
+
+.label {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.link {
+  stroke: red;
+  stroke-opacity: .5;
+  fill: none;
+}
+
+#tooltip {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+}
+
+#tooltip.hidden {
+        display: none;
+}
+
+#tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+}
+
+#tooltip2 {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+}
+
+#tooltip2.hidden {
+        display: none;
+}
+
+#tooltip2 p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+}
